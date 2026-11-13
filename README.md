@@ -40,7 +40,13 @@ Add `flutter_esim_compatibility` to your `pubspec.yaml` file:
 dependencies:
   flutter_esim_compatibility: ^1.0.0
 ```
-
+OR 
+```yaml
+flutter_esim_compatibility:
+  git:
+    url: https://github.com/javed00700/flutter_esim_compatibility.git
+    ref: main
+```
 Then run:
 
 ```bash
