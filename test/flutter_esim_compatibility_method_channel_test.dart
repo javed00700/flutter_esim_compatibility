@@ -66,3 +66,4 @@ void main() {
     expect(await platform.isEsimCompatible(), isFalse);
   });
 }
+

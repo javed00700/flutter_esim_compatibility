@@ -54,3 +54,4 @@ class FlutterEsimCompatibilityPlugin : FlutterPlugin, MethodChannel.MethodCallHa
         appContext = null
     }
 }
+

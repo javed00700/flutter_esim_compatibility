@@ -29,3 +29,4 @@ internal class FlutterEsimCompatibilityPluginTest {
         Mockito.verify(mockResult).notImplemented()
     }
 }
+
