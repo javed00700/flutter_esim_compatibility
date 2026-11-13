@@ -28,4 +28,3 @@ abstract class FlutterEsimCompatibilityPlatform extends PlatformInterface {
     throw UnimplementedError('isEsimCompatible() has not been implemented.');
   }
 }
-

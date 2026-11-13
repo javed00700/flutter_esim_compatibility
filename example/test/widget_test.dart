@@ -10,9 +10,9 @@ void main() {
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
-      channel,
-      (MethodCall methodCall) async => true,
-    );
+          channel,
+          (MethodCall methodCall) async => true,
+        );
   });
 
   tearDown(() {
@@ -20,8 +20,9 @@ void main() {
         .setMockMethodCallHandler(channel, null);
   });
 
-  testWidgets('Verify eSIM Compatibility screen renders',
-      (WidgetTester tester) async {
+  testWidgets('Verify eSIM Compatibility screen renders', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(const MyApp());
     await tester.pump();
     await tester.pump();

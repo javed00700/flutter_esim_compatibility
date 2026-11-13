@@ -18,8 +18,8 @@ void main() {
       FlutterEsimCompatibilityPlatform.instance;
 
   test('$MethodChannelFlutterEsimCompatibility is the default instance', () {
-    expect(initialPlatform,
-        isInstanceOf<MethodChannelFlutterEsimCompatibility>());
+    expect(
+        initialPlatform, isInstanceOf<MethodChannelFlutterEsimCompatibility>());
   });
 
   group('FlutterEsimCompatibility', () {
@@ -52,4 +52,3 @@ void main() {
     });
   });
 }
-

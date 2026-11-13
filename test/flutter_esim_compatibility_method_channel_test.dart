@@ -14,7 +14,8 @@ void main() {
         .setMockMethodCallHandler(channel, null);
   });
 
-  test('isEsimCompatible returns true when native method returns true', () async {
+  test('isEsimCompatible returns true when native method returns true',
+      () async {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
       channel,
@@ -29,7 +30,8 @@ void main() {
     expect(await platform.isEsimCompatible(), isTrue);
   });
 
-  test('isEsimCompatible returns false when native method returns false', () async {
+  test('isEsimCompatible returns false when native method returns false',
+      () async {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
       channel,
@@ -44,7 +46,8 @@ void main() {
     expect(await platform.isEsimCompatible(), isFalse);
   });
 
-  test('isEsimCompatible returns false when native method returns null', () async {
+  test('isEsimCompatible returns false when native method returns null',
+      () async {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
       channel,
@@ -66,4 +69,3 @@ void main() {
     expect(await platform.isEsimCompatible(), isFalse);
   });
 }
-

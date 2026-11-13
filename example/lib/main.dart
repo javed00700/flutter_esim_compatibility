@@ -86,9 +86,10 @@ class _EsimHomeScreenState extends State<EsimHomeScreen> {
                       : 'eSIM is Not Supported',
                   style: theme.textTheme.headlineSmall?.copyWith(
                     fontWeight: FontWeight.bold,
-                    color: _isEsimSupported == true
-                        ? Colors.green.shade800
-                        : Colors.red.shade800,
+                    color:
+                        _isEsimSupported == true
+                            ? Colors.green.shade800
+                            : Colors.red.shade800,
                   ),
                   textAlign: TextAlign.center,
                 ),

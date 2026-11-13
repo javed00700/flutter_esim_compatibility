@@ -29,4 +29,3 @@ class FlutterEsimCompatibility {
 
 /// Backward compatibility alias for [FlutterEsimCompatibility].
 typedef EsimCompatibility = FlutterEsimCompatibility;
-
