@@ -1,13 +1,13 @@
-import 'package:esim_compatibility/esim_compatibility_method_channel.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_esim_compatibility/flutter_esim_compatibility_method_channel.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  final MethodChannelEsimCompatibility platform =
-      MethodChannelEsimCompatibility();
-  const MethodChannel channel = MethodChannel('esim_compatibility');
+  final MethodChannelFlutterEsimCompatibility platform =
+      MethodChannelFlutterEsimCompatibility();
+  const MethodChannel channel = MethodChannel('flutter_esim_compatibility');
 
   tearDown(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger

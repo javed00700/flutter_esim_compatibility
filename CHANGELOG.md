@@ -1,6 +1,6 @@
 ## 1.0.0
 
-- Initial stable release.
+- Initial stable release of `flutter_esim_compatibility`.
 - Swift Package Manager (SPM) and CocoaPods dual support for iOS (compatible with Flutter 3.44+ and Xcode 15+).
 - Native Android eSIM detection via `EuiccManager` (Android 9 / API 28+).
 - High-performance, zero-allocation iOS hardware model detection with future-proof heuristics for upcoming Apple devices.

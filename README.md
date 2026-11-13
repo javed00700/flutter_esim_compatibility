@@ -1,6 +1,6 @@
-# esim_compatibility
+# flutter_esim_compatibility
 
-[![pub package](https://img.shields.io/pub/v/esim_compatibility.svg)](https://pub.dev/packages/esim_compatibility)
+[![pub package](https://img.shields.io/pub/v/flutter_esim_compatibility.svg)](https://pub.dev/packages/flutter_esim_compatibility)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight, high-performance Flutter plugin to detect whether the user's device supports **eSIM (embedded SIM)** on **iOS** and **Android**.
@@ -34,11 +34,11 @@ A lightweight, high-performance Flutter plugin to detect whether the user's devi
 
 ## Installation
 
-Add `esim_compatibility` to your `pubspec.yaml` file:
+Add `flutter_esim_compatibility` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  esim_compatibility: ^1.0.0
+  flutter_esim_compatibility: ^1.0.0
 ```
 
 Then run:
@@ -54,11 +54,11 @@ flutter pub get
 ### Simple Check
 
 ```dart
-import 'package:esim_compatibility/esim_compatibility.dart';
+import 'package:flutter_esim_compatibility/flutter_esim_compatibility.dart';
 
 void main() async {
   // Check eSIM compatibility
-  final bool isSupported = await EsimCompatibility.isEsimCompatible();
+  final bool isSupported = await FlutterEsimCompatibility.isEsimCompatible();
 
   if (isSupported) {
     print('✅ Device supports eSIM');
@@ -68,11 +68,13 @@ void main() async {
 }
 ```
 
+> **Note:** The legacy class name `EsimCompatibility` is also available as an alias for backward compatibility.
+
 ### In a Flutter Widget
 
 ```dart
-import 'package:esim_compatibility/esim_compatibility.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_esim_compatibility/flutter_esim_compatibility.dart';
 
 class EsimCheckWidget extends StatefulWidget {
   const EsimCheckWidget({super.key});
@@ -91,7 +93,7 @@ class _EsimCheckWidgetState extends State<EsimCheckWidget> {
   }
 
   Future<void> _checkDevice() async {
-    final supported = await EsimCompatibility.isEsimCompatible();
+    final supported = await FlutterEsimCompatibility.isEsimCompatible();
     if (!mounted) return;
     setState(() {
       _isEsimSupported = supported;

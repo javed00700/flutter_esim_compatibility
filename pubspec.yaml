@@ -1,9 +1,9 @@
-name: esim_compatibility
+name: flutter_esim_compatibility
 description: "A lightweight Flutter plugin to check if an Android or iOS device supports eSIM with native platform code."
 version: 1.0.0
-homepage: https://github.com/javed00700/esim_compatibility
-repository: https://github.com/javed00700/esim_compatibility
-issue_tracker: https://github.com/javed00700/esim_compatibility/issues
+homepage: https://github.com/javed00700/flutter_esim_compatibility
+repository: https://github.com/javed00700/flutter_esim_compatibility
+issue_tracker: https://github.com/javed00700/flutter_esim_compatibility/issues
 license: MIT
 
 topics:
@@ -31,7 +31,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.codewithejaz.esim_compatibility
-        pluginClass: EsimCompatibilityPlugin
+        package: com.javed00700.flutter_esim_compatibility
+        pluginClass: FlutterEsimCompatibilityPlugin
       ios:
-        pluginClass: EsimCompatibilityPlugin
+        pluginClass: FlutterEsimCompatibilityPlugin

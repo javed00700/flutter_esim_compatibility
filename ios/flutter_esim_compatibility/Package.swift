@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "esim_compatibility",
+    name: "flutter_esim_compatibility",
     platforms: [
         .iOS("13.0")
     ],
     products: [
-        .library(name: "esim-compatibility", targets: ["esim_compatibility"])
+        .library(name: "flutter-esim-compatibility", targets: ["flutter_esim_compatibility"])
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework")
     ],
     targets: [
         .target(
-            name: "esim_compatibility",
+            name: "flutter_esim_compatibility",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework")
             ],
@@ -26,4 +26,3 @@ let package = Package(
         )
     ]
 )
-

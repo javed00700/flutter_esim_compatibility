@@ -1,4 +1,4 @@
-package com.codewithejaz.esim_compatibility
+package com.javed00700.flutter_esim_compatibility
 
 import android.content.Context
 import android.os.Build
@@ -9,17 +9,17 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 
 /**
- * Android implementation of the `esim_compatibility` plugin.
+ * Android implementation of the `flutter_esim_compatibility` plugin.
  *
  * Verifies eSIM compatibility using [EuiccManager] on Android 9 (API level 28) and above.
  */
-class EsimCompatibilityPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
+class FlutterEsimCompatibilityPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
     private var channel: MethodChannel? = null
     private var appContext: Context? = null
 
     override fun onAttachedToEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-        channel = MethodChannel(binding.binaryMessenger, "esim_compatibility").apply {
-            setMethodCallHandler(this@EsimCompatibilityPlugin)
+        channel = MethodChannel(binding.binaryMessenger, "flutter_esim_compatibility").apply {
+            setMethodCallHandler(this@FlutterEsimCompatibilityPlugin)
         }
         appContext = binding.applicationContext
     }

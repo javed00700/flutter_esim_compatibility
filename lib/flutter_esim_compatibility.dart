@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'esim_compatibility_platform_interface.dart';
+import 'flutter_esim_compatibility_platform_interface.dart';
 
 /// A utility class to check whether the current device supports eSIM.
-class EsimCompatibility {
-  /// Creates an instance of [EsimCompatibility].
-  const EsimCompatibility();
+class FlutterEsimCompatibility {
+  /// Creates an instance of [FlutterEsimCompatibility].
+  const FlutterEsimCompatibility();
 
   /// Checks if the current device is eSIM compatible.
   ///
@@ -18,7 +18,7 @@ class EsimCompatibility {
   ///
   /// On unsupported platforms or in case of errors, returns `false`.
   static Future<bool> isEsimCompatible() {
-    return EsimCompatibilityPlatform.instance.isEsimCompatible();
+    return FlutterEsimCompatibilityPlatform.instance.isEsimCompatible();
   }
 
   /// Instance method version of [isEsimCompatible].
@@ -26,3 +26,6 @@ class EsimCompatibility {
     return isEsimCompatible();
   }
 }
+
+/// Backward compatibility alias for [FlutterEsimCompatibility].
+typedef EsimCompatibility = FlutterEsimCompatibility;

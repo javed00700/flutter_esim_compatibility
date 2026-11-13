@@ -1,4 +1,4 @@
-group = "com.codewithejaz.esim_compatibility"
+group = "com.javed00700.flutter_esim_compatibility"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -25,7 +25,7 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    namespace = "com.codewithejaz.esim_compatibility"
+    namespace = "com.javed00700.flutter_esim_compatibility"
 
     compileSdk = 35
 

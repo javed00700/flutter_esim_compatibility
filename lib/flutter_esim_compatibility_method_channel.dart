@@ -1,13 +1,15 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'esim_compatibility_platform_interface.dart';
+import 'flutter_esim_compatibility_platform_interface.dart';
 
-/// An implementation of [EsimCompatibilityPlatform] that uses method channels.
-class MethodChannelEsimCompatibility extends EsimCompatibilityPlatform {
+/// An implementation of [FlutterEsimCompatibilityPlatform] that uses method channels.
+class MethodChannelFlutterEsimCompatibility
+    extends FlutterEsimCompatibilityPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final MethodChannel methodChannel = const MethodChannel('esim_compatibility');
+  final MethodChannel methodChannel =
+      const MethodChannel('flutter_esim_compatibility');
 
   @override
   Future<bool> isEsimCompatible() async {

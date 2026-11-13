@@ -1,5 +1,5 @@
-import 'package:esim_compatibility/esim_compatibility.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_esim_compatibility/flutter_esim_compatibility.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +43,7 @@ class _EsimHomeScreenState extends State<EsimHomeScreen> {
       _isLoading = true;
     });
 
-    final isSupported = await EsimCompatibility.isEsimCompatible();
+    final isSupported = await FlutterEsimCompatibility.isEsimCompatible();
 
     if (!mounted) return;
 
